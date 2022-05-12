@@ -1,0 +1,18 @@
+.users-list {
+    margin-left: 34px;
+    margin-top: 18px;
+    width: 420px;
+    &__name {  
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 17px;
+    }
+}
+
+.count-users {
+    width: 420px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-bottom: 25px;
+}

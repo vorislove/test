@@ -1,0 +1,111 @@
+@import '../Style/variables.scss';
+
+.user-profile {
+    margin-left: 36px;
+    width: 438px;
+    margin-top: 19px;
+    &__submmit {
+        background: $green;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        padding: 0 11px;
+        height: 25px;
+        margin-top: 10px;
+        float: right;
+    }
+    &__submmit:disabled {
+        background: #AFAFAF;
+    }
+    &__page {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between; 
+       align-items: center;
+       &__name {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+       }
+       &__btn {
+            background: $purple;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            padding: 0 11px;
+            height: 25px;
+       }
+    }
+    &__info {
+        margin-top: 16px;
+        border: 1px solid #F3F3F3;
+        box-sizing: border-box;
+        border-radius: 8px;
+        width: 438px;
+        height: 463px; 
+        &__label-input {
+            margin-top: 10px;
+            margin-left: 12px;
+            font-weight: 400;
+            font-size: 8px;
+            &__label {
+                margin-bottom: 3px;
+                font-weight: 400;
+                font-size: 8px;
+                line-height: 9px;
+            }
+            &__input {
+                height: 22px;
+                width: 201px;
+            }
+            &__input-comment {
+                width: 420px;
+                height: 55px;
+                box-sizing: border-box;
+                border-radius: 5px;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 12px;
+                padding-left: 10px;
+                resize: none;
+                border: 1px solid #D8D8D8;
+                padding-top: 5px;
+                font-family: 'Roboto';
+            }
+        }
+        &__label-input:first-child {
+            margin-top: 20px;
+        }
+    }
+}
+
+input {
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    padding-left: 10px;
+}
+
+.required {
+    border: 1px solid #D91313;
+}
+
+input:disabled {
+    background-color: white;
+}
+
+textarea:disabled {
+    background-color: white;
+}

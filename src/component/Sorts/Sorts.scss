@@ -1,0 +1,24 @@
+@import '../Style/variables.scss';
+
+.sorts {
+    width: 142px;
+    height: 100%;
+    background: #BDBDBD;
+    overflow: hidden;
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    &__name {
+        margin-top: 37px;
+        font-size: 12px;
+    }
+    &__button {
+        height: 25px;
+        background-color: $purple;
+        border-radius: 5px;
+        color: white;
+        border: none;
+        margin-top: 10px;
+        padding: 0 15px;
+    }
+}
